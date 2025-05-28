@@ -4,9 +4,6 @@ body {
   background-color: #0d1b2a;
   font-family: Arial, sans-serif;
   min-height: 100vh;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 .container {
@@ -16,7 +13,7 @@ body {
   border-radius: 12px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
   color: white;
-  margin: 40px auto; /* centraliza horizontalmente e margem superior e inferior */
+  margin: 40px auto; /* Centraliza horizontalmente */
 }
 
 h1 {
@@ -25,7 +22,39 @@ h1 {
   margin-bottom: 20px;
 }
 
-/* Demais estilos mantidos iguais */
+h2 {
+  font-size: 1.5rem;
+  margin-top: 30px;
+}
+
+ul {
+  margin-left: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+.image-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.image-row a {
+  flex: 1;
+  max-width: 32%;
+  display: block;
+}
+
+.image-row img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
 
 footer {
   background-color: #000;
@@ -34,7 +63,5 @@ footer {
   padding: 15px;
   font-size: 0.9em;
   width: 100%;
-  margin-top: 40px;
-  /* position: fixed; removido */
-  /* bottom: 0; removido */
+  margin-top: 40px; /* Espaço acima do footer */
 }
