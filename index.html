@@ -1,47 +1,35 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dengue</title>
   <style>
     body {
       margin: 0;
       padding: 0;
-      background-color: #0d1b2a;
+      background-color: #0d1b2a; /* azul escuro */
       font-family: Arial, sans-serif;
       display: flex;
       justify-content: center;
-      align-items: center;
+      align-items: flex-start;
       min-height: 100vh;
     }
 
     .container {
-      background-color: #6c7a89;
+      background-color: #6c7a89; /* azul meio cinza */
       padding: 40px 60px;
       border-radius: 12px;
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
       max-width: 1000px;
       color: white;
-    }
-
-    .title-row {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 20px;
-      margin-bottom: 20px;
-    }
-
-    .title-row img {
-      width: 80px;
-      height: auto;
+      margin: 40px 0;
     }
 
     h1 {
-      margin: 0;
-      font-size: 2.5rem;
       text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 20px;
     }
 
     h2 {
@@ -57,39 +45,37 @@
       margin-bottom: 10px;
     }
 
-    .image-row {
-      display: flex;
-      justify-content: space-between;
-      gap: 10px;
-      margin-top: 30px;
-      flex-wrap: wrap;
-    }
+.image-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
 
-    .image-row a img {
-      width: 100%;
-      max-width: 32%;
-      border-radius: 8px;
-      object-fit: cover;
-    }
+.image-row a {
+  flex: 1;
+  max-width: 32%;
+  display: block;
+}
 
-    .gif-container {
-      text-align: center;
-      margin-top: 20px;
-    }
-
-    .footer {
-      text-align: center;
-      font-size: 0.9rem;
-      color: #ccc;
-      margin-top: 40px;
-    }
+.image-row img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
   </style>
 </head>
 <body>
   <div class="container">
-    
-      <h1>Dengue</h1>
-    </div>
+
+      <div class="title-row">
+      <a href="tema.jpg" target="_blank">
+        <img src="tema.jpg" alt="Mosquito da dengue" />
+      </a>
+          
+    <h1>Dengue</h1>
 
     <h2>Questões sociais, ambientais, políticas e econômicas:</h2>
 
@@ -112,13 +98,13 @@
 
     <div class="image-row">
       <a href="d3.jpg" target="_blank">
-        <img src="d3.jpg" alt="Imagem 1 - Moradia precária" />
+        <img src="d3.jpg" alt="Imagem 1 - Moradia precária">
       </a>
       <a href="d2.jpg" target="_blank">
-        <img src="d2.jpg" alt="Imagem 2 - Poluição em rio" />
+        <img src="d2.jpg" alt="Imagem 2 - Poluição em rio">
       </a>
       <a href="d1.jpg" target="_blank">
-        <img src="d1.jpg" alt="Imagem 3 - Lixo em área urbana" />
+        <img src="d1.jpg" alt="Imagem 3 - Lixo em área urbana">
       </a>
     </div>
 
@@ -138,12 +124,11 @@
       <li>Formulação de vacinas contra o vírus da dengue.</li>
     </ul>
 
-    <!-- GIF Adicionado -->
-    <div class="gif-container">
-      <a href="giphy.gif" target="_blank">
-        <img src="giphy.gif" alt="GIF engraçado sobre combate à dengue" style="max-width: 100%; border-radius: 8px;" />
-      </a>
-    </div>
+    <div style="text-align: center; margin-top: 20px;">
+    <a href="giphy.gif" target="_blank">
+        <img src="giphy.gif" alt="GIF de inseticida sendo aplicado" width="300">
+    </a>
+</div>
 
     <h3>Física</h3>
     <ul>
@@ -181,12 +166,9 @@
         <img src="d8.jpeg" alt="Mobilização comunitária contra a dengue" />
       </a>
     </div>
-
-    <!-- Rodapé -->
-    <div class="footer">
-      © 2025 Rafael Gonçalves da Silva. Todos os direitos reservados.
-    </div>
-
   </div>
+  <footer style="text-align: center; padding: 20px 0; color: #ccc; font-size: 0.9rem;">
+    © 2025 Rafael Gonçalves da Silva. Todos os direitos reservados.
+</footer>
 </body>
 </html>
